@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url(../../../assets/fonts/Graphik\ Family/Graphik-Regular-Trial.otf) format('opentype');
+}
+
+.navbar-brand {
+    img {
+        width: 15em;
+    }
+
+}
+
+.nav-item {
+    a {
+        color: #00497c;
+        font-family: 'Graphik';
+    }
+    .is-active {
+        color: #0074c7;
+    }
+
+}

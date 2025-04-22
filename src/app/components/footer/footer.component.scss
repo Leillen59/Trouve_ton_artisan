@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url(../../../assets/fonts/Graphik\ Family/Graphik-Regular-Trial.otf) format('opentype');
+}
+
+.container-fluid {
+
+    background-color: #0074c7;
+    
+    img{
+        width: 15em;
+    }
+
+    h5 {
+        color: white;
+        font-family: 'Graphik', sans-serif;
+    }
+    
+    .nav-link, .nav-item {
+        color: white;
+    }
+    a:hover {
+        opacity: 50%;
+    }
+}
