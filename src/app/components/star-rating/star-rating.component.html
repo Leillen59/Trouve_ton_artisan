@@ -1,0 +1,9 @@
+<div class="star-rating">
+  <i *ngFor="let star of stars" class="fa-regular"
+      [ngClass]="{
+        'fa-solid fa-star': star.full,
+        'fa-star-half-stroke': star.half,
+        '': star.empty,
+        }">
+  </i>
+</div>

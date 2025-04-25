@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url(../../../assets/fonts/Graphik\ Family/Graphik-Regular-Trial.otf) format('opentype');
+}
+
+h1 {
+    font-family: 'Graphik', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.container_step {
+    background-color: white;
+    font-family: 'Graphik',sans-serif;
+    border-radius: 2.5rem;
+    padding: 2.5rem;
+    .card{
+        border-radius: 2.5rem;
+        background-color: #f1f8fc;
+        border: none;
+        .card-body {
+            h5{
+                font-weight: 800;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        img {
+            height: 15rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

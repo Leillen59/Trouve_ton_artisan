@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url(../../../assets/fonts/Graphik\ Family/Graphik-Regular-Trial.otf) format('opentype');
+}
+
+.container {
+    font-family: 'Graphik', sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .card {
+        border-radius: 2.5rem;
+        border: none,
+    }
+    .card-header {
+        text-transform:uppercase;
+        border: none;
+    }
+    .card-body {
+        background-image: url(../../../assets/Img/Accueil/Laurier.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        background-color: #f1f8fc;;
+    }
+    .btn {
+        border-radius: 1rem;
+    }
+    .card-footer {
+        border: none;
+    }
+}
