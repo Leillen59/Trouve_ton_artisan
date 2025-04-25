@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row row-cols-1 row-cols-lg-3 g-4">
+        <div *ngFor="let artisan of artisans | toptroisFilter: artisans" class="col">
+<!-- Carte par artisan -->
+            <div class="card text-center">
+                <div class="card-header">
+                {{artisan.name}}
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{artisan.specialty}}</h5>
+                    <p class="card-text">{{artisan.location}}</p>
+                    <a href="#" class="btn btn-primary">Contacter</a>
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                        <h6>Note: {{artisan.note}}/5</h6>
+                        <p>
+                            <app-star-rating [rating]="artisan.note"></app-star-rating>
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
