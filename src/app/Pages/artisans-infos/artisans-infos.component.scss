@@ -3,16 +3,16 @@
     src: url(../../../assets/fonts/Graphik\ Family/Graphik-Regular-Trial.otf) format('opentype');
 }
 
-.container-fluid {
+.container-artisans {
     background-color: white;
-    font-family: 'Graphik',sans-serif;
     border-radius: 2.5rem;
-    padding: 2.5rem;
-    
-    h1{
-        font-size: 12rem;
+    padding-bottom: 1rem;
+    .container-about {
+        background-color: #f1f8fc;
+        border-radius: 2.5rem;
+        padding: 1rem;
     }
-    h2 {
-        font-size: 2.5rem;
+    .btn {
+        border-radius: 1.5rem;
     }
 }

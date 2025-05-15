@@ -1,0 +1,21 @@
+<div class="card mb-3 shadow">
+    <div class="card-body">
+        <h5 class="card-title text-center">{{ data.name }}</h5>
+        <div class="row h-100 d-flex align-items-center">
+            <div class="col-6">
+                <app-image-artisans [category]="data.category" />
+                <div class="text-center">
+                    <p class="artisans-note"> {{data.note}} / 5</p>
+                    <app-star-rating [rating]="data.note" />
+                </div>
+            </div>
+            <div class="col-6 text-center">
+                <p class="fs-3 specialty">{{ data.specialty }}</p>
+                <p class="fs-5 location">{{ data.location }}</p>
+                <div class="contact-button">
+                    <a routerLink="/artisans/infos/{{ data.id }}" class="btn btn-primary card-link m-auto">Contacter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url(../../../assets/fonts/Graphik\ Family/Graphik-Regular-Trial.otf) format('opentype');
+}
+
+.card {
+
+    font-family: 'Graphik', sans-serif;
+    border: none;
+    border-radius: 2.5rem;
+    background-color: #f1f8fc;
+    .card-body {
+        h5 {
+            font-weight: 500;
+        }
+        .artisans-note {
+            margin-bottom:0;
+            margin-top:1rem;
+        }
+        .specialty{
+            color: #0074c7;
+        }
+        .contact-button{
+            .btn {
+                border-radius:1rem;
+            }
+        }
+    }
+}
