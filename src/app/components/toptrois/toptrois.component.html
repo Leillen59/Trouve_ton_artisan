@@ -1,4 +1,7 @@
 <div class="container">
+    <div class="d-flex justify-content-center container">
+        <app-titreh2 titre="Nos artisans du mois "/>
+    </div>
     <div class="row row-cols-1 row-cols-lg-3 g-4">
         <div *ngFor="let artisan of artisans | toptroisFilter: artisans" class="col">
 <!-- Carte par artisan -->
@@ -9,7 +12,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{artisan.specialty}}</h5>
                     <p class="card-text">{{artisan.location}}</p>
-                    <a href="#" class="btn btn-primary">Contacter</a>
+                    <a routerLink="/artisans/infos/{{ artisan.id }}" class="btn btn-primary">Contacter</a>
                     </div>
                     <div class="card-footer text-body-secondary">
                         <h6>Note: {{artisan.note}}/5</h6>

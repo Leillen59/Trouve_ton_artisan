@@ -1,0 +1,8 @@
+<!-- Changement d'illustration selon le corps de métiers -->
+
+<div [ngSwitch]="category">
+    <img *ngSwitchCase="'Bâtiment'" src="../../../assets/Img/Artisans-image/Batiment.svg" alt="Illustration du corps de métiers pour le batiment" class="img-fluid">
+    <img *ngSwitchCase="'Services'" src="../../../assets/Img/Artisans-image/Services.svg" alt="Illustration du corps de métiers pour les services" class="img-fluid">
+    <img *ngSwitchCase="'Fabrication'" src="../../../assets/Img/Artisans-image/Fabrication.svg" alt="Illustration du corps de métiers pour la Fabrication" class="img-fluid img-fabrication">
+    <img *ngSwitchCase="'Alimentation'" src="../../../assets/Img/Artisans-image/Alimentation.svg" alt="Illustration du corps de métiers pour l'Alimentation" class="img-fluid">
+</div>

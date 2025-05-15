@@ -1,0 +1,43 @@
+<div class="container-step container-fluid">
+    <h1 class="text-center"> Nos artisans </h1>
+    <div *ngIf="categorie" class="d-flex justify-content-center">
+        <app-titreh2 class="text-capitalize" [titre]=categorie/>
+    </div>
+
+    <!-- Catégorie -->
+    <div *ngIf="categorie">
+        <div *ngIf="(artisans | categoryFilter: categorie | search: searchTerm).length < 1">
+            <app-invalid-search/>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 my-2 justify-content-center">
+            <div class="col my-2" *ngFor="let artisan of artisans | categoryFilter: categorie | search: searchTerm">
+                <app-artisan-card [data]="artisan"/>
+            </div>
+        </div>
+    </div>
+
+    <!--Recherche-->
+    <div *ngIf="recherche">
+        <div *ngIf="(artisans | search: recherche).length < 1">
+            <app-invalid-search/>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 my-2 justify-content-center">
+            <div class="col my-2" *ngFor="let artisan of artisans | search: recherche">
+                <app-artisan-card [data]="artisan"/>
+            </div>
+        </div>
+    </div>
+    <!-- Aucun paramètres-->
+    <div *ngIf="!recherche && !categorie">
+        <div *ngIf="(artisans | search: searchTerm).length < 1">
+            <app-invalid-search />
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 my-2 justify-content-center">
+            <div class="col my-2" *ngFor="let artisan of artisans | search: searchTerm">
+                <app-artisan-card [data]="artisan"/>
+            </div>
+        </div>
+    </div>
+
+</div>
+

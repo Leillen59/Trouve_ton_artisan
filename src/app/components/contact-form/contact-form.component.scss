@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url(../../../assets/fonts/Graphik\ Family/Graphik-Regular-Trial.otf) format('opentype');
+}
+
+.form-container {
+    background-color: #f1f8fc;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    input {
+        border-radius: 0.75rem;
+    }
+}

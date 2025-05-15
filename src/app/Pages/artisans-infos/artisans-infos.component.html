@@ -1,0 +1,24 @@
+<div class="container-fluid container-artisans">
+    <div class="">
+        <div class="text-center p-3">
+            <app-titreh2 class="fs-2" [titre]="data.name"/>
+            <p class="fs-5">{{data.note}} / 5 <app-star-rating [rating]="data.note"/></p>
+       </div>
+        <div class="text-center">
+            <app-image-artisans [category]="data.category" />
+            <p class="fs-3">{{ data.specialty }}</p>
+            <p class="fs-4">{{ data.location }}</p>
+        </div>
+        <div class="container shadow row-2 container-about">
+            <app-titreh2 titre="A propos" />
+            <p class="col-12">{{ data.about }}</p>
+        </div>
+        <div *ngIf="data.website != ''" class="p-3 col-12 d-flex justify-content-center">
+            <a [href]="data.website" target="_blank" class="btn btn-primary">Plus de détails sur notre site internet</a>
+        </div>
+
+        <div class="col-12 col-md-8 mx-auto">
+            <app-contact-form/>
+        </div>
+    </div>
+</div>
